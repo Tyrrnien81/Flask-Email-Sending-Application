@@ -71,7 +71,7 @@ http://127.0.0.1:5000
 -   **Email Sending**: On the main page of the application, enter the sender's email, recipient's email, and the message content, then click the "Send" button to send the email.
 -   **Recipient Management**: Multiple recipients can be entered by separating them with commas.
 
-### Common Error
+## Common Error
 
 -   If you encountered the following error while pushing
 
