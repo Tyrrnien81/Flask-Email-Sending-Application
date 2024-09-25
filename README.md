@@ -70,3 +70,23 @@ http://127.0.0.1:5000
 
 -   **Email Sending**: On the main page of the application, enter the sender's email, recipient's email, and the message content, then click the "Send" button to send the email.
 -   **Recipient Management**: Multiple recipients can be entered by separating them with commas.
+
+### Common Error
+
+-   If you encountered the following error while pushing
+
+```bash
+error: RPC failed; HTTP 400 curl 22 The requested URL returned error: 400
+send-pack: unexpected disconnect while reading sideband packet
+Writing objects: 100% (1967/1967), 6.27 MiB | 8.77 MiB/s, done.
+Total 1967 (delta 168), reused 0 (delta 0), pack-reused 0
+fatal: the remote end hung up unexpectedly
+Everything up-to-date
+```
+
+-   Solution
+
+```bash
+git config http.postBuffer 524288000
+git pull && git push
+```
