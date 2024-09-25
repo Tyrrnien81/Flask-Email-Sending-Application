@@ -43,6 +43,8 @@ pip install flask flask-mail python-dotenv
 
 ### 4. Enter your gmail address & App password in the .env file
 
+-   more info about App password: https://support.google.com/mail/answer/185833?hl=en
+
 ```bash
 MAIL_SERVER = smtp.gmail.com
 MAIL_PORT = 465
