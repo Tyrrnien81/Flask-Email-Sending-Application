@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Send Email</title>
+    </head>
+    <body>
+        <div id="message">
+            <div id="subject"><h1>Welcome to the Email Service</h1></div>
+            <form action="/email" method="POST">
+                <p>{{ content }}</p>
+                <p>
+                    <label for="name">Sender Name:</label><br />
+                    <input type="text" name="email_sender" value="" />
+                </p>
+                <p>
+                    <label for="email">Receiver Email:</label><br />
+                    <input type="text" name="email_receiver" value="" />
+                </p>
+                <p>
+                    <label for="subject">Subject</label><br />
+                    <input type="text" name="email_subject" value="" />
+                </p>
+                <p>
+                    <label for="body">Message:</label><br />
+                    <textarea
+                        type="text"
+                        name="email_content"
+                        value=""
+                        cols="50"
+                        rows="10"
+                    ></textarea>
+                </p>
+                <p>
+                    <input type="submit" value="Send" />
+                </p>
+            </form>
+        </div>
+    </body>
+</html>
